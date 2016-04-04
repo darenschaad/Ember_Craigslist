@@ -1,0 +1,8 @@
+<h1>Welcome to Craigslist</h1>
+<h3>Browse our categories to find listings.</h3>
+
+{{#each model as |category|}}
+  {{category-tile category=category}}
+{{/each}}
+
+{{new-category saveCategory='saveCategory'}}
