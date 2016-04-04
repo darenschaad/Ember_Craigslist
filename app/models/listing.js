@@ -8,5 +8,6 @@ export default DS.Model.extend({
   image: DS.attr(),
   location: DS.attr(),
   date: DS.attr(),
+  contact: DS.attr(),
   category: DS.belongsTo('category', { async: true })
 });

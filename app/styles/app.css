@@ -1,4 +1,22 @@
 .thumbnailImage {
   height: 200px;
-  width: 400px;
+}
+
+.detailImage {
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+}
+
+.price{
+  position: absolute;
+  top: 0%;
+  background: white;
+  border-radius: 2px;
+  padding-right: 5px;
+  margin-bottom: -3px;
+}
+
+.price p {
+  margin-bottom: 2px;
 }

@@ -1,7 +1,9 @@
-<div class="listingItem">
-  <div class="thumbnailImage" style="background: url('{{listing.image}}'); background-size: cover;"></div>
+<div class="listingItem col col-md-4">
+  {{#link-to 'listing' listing.id}}<div class="thumbnailImage" style="background: url('{{listing.image}}') no-repeat center center ; background-size: cover;"></div>{{/link-to}}
   <p>{{listing.date}}</p>
-  <h4>{{listing.title}}</h4>
-  <p>{{listing.location}}</p>
-  <p class="listingPrice">{{listing.price}}</p>
+  {{#link-to 'listing' listing.id}}<h4>{{listing.title}}</h4>{{/link-to}}
+  <p>({{listing.location}})</p>
+  <div class="price">
+    <p class="listingPrice">${{listing.price}}</p>
+  </div>
 </div>

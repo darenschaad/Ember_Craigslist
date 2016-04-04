@@ -1,0 +1,13 @@
+<div class="listingItem">
+  <div class="detailImage" style="background: url('{{model.image}}'); background-size: cover;"></div>
+    <p>{{timeSlice model.date}}</p>
+    <h4>{{model.title}}</h4>
+    <p>({{model.location}})</p>
+    <p class="listingPrice">${{model.price}}</p>
+    <p>{{model.description}} </p>
+    {{#if model.contact}}
+      <p>Contact Information: {{model.contact}}</p>
+    {{/if}}
+</div>
+
+{{edit-listing listing=model saveEdit='saveEdit'}}
