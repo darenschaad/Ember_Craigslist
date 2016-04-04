@@ -11,6 +11,7 @@ export default Ember.Component.extend({
         name: this.get("name")
       };
       this.set('addNewCategory', false);
+      this.set('name', "");
       this.sendAction('saveCategory', params);
     }
   }

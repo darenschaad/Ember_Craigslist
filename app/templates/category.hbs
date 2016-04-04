@@ -1,0 +1,10 @@
+<h2>Welcome to the {{model.name}} Page</h2>
+
+<ul>
+  {{#each model.listings as |listing|}}
+    {{listing-tile category=model}}
+  {{/each}}
+</ul>
+
+
+{{new-listing saveListing='saveListing' category=model}}
