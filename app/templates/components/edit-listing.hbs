@@ -29,10 +29,10 @@
         <label for="contact">Contact Information</label>
         {{input value=listing.contact id="contact"}}
       </div>
-      <button {{action 'saveEdit' listing}}>Save Listing</button>
+      <button class="btn btn-success" {{action 'saveEdit' listing}}>Save Listing</button>
     </form>
   </div>
   {{else}}
-    <button {{action 'showEditForm'}}>Edit Listing</button>
+    <button class="btn btn-primary" {{action 'showEditForm'}}>Edit Listing</button>
 
 {{/if}}

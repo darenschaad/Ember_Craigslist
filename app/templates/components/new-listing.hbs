@@ -29,9 +29,9 @@
         <label for="contact">Contact Information</label>
         {{input value=contact id="contact"}}
       </div>
-      <button {{action 'saveListing'}}>Save Listing</button>
+      <button class="btn btn-success" {{action 'saveListing'}}>Save Listing</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'listingFormShow'}}>Post A Listing</button>
+  <button class="btn btn-primary" {{action 'listingFormShow'}}>Post A Listing</button>
 {{/if}}

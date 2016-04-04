@@ -5,9 +5,9 @@
         <label for="name">Category Name</label>
         {{input value=name id="name"}}
       </div>
-      <button {{action 'saveCategory'}}>Save Category</button>
+      <button class="btn btn-primary" {{action 'saveCategory'}}>Save Category</button>
     </form>
   </div>
   {{else}}
-    <button {{action 'categoryFormShow'}}>Add A Category</button>
+    <button class="btn btn-primary" {{action 'categoryFormShow'}}>Add A Category</button>
 {{/if}}
